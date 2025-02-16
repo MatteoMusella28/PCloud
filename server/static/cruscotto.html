@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<!--
+    Landed by Matteo Musella
+-->
+<html>
+    <head>
+        <title>HydroSophia</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+        <div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="casa.html">HydroSophia</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="casa.html">Home</a></li>
+						<li><a href="cruscotto.html">Dashboard</a></li>
+						<li><a href="valvole.html">Valvole</a></li>
+						<li><a href="su di noi.html">Su di noi</a></li>
+						<li>
+							<a href="#">Lingua</a>
+							<ul>
+								<li><a href="casa.html">Italiano</a></li>
+								<li><a href="home.html">Inglese</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+            <!-- Main -->
+            <div id="main" class="wrapper style1">
+                <div class="container">
+                    <header class="major">
+                        <h2>DASHBOARD</h2>
+                        <p>"HydroSophia: acqua intelligente al servizio della tua terra."</p>
+                    </header>
+
+					<!-- Graph Section -->
+					<section id="content">
+						<h3>GRAFICO 1 - UMIDITA' x TEMPO</h3>
+						<div id="chart_div" style="width: 1200px; height: 800px;"></div>
+						<hr>
+						<h3>GRAFICO 2 - VALVOLA x TEMPO</h3>
+						<div id="chart_div_valve" style="width: 1200px; height: 400px;"></div>
+					</section>
+				</div>
+			</div>
+
+			<!-- KPI Section -->
+				<section id="four" class="wrapper style1 special fade-up">
+					<div class="container">
+						<header class="major">
+							<h2>KPIs</h2>
+						</header>
+						<div class="box alt">
+							<div class="row gtr-uniform">
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-chart-area"></span>
+									<h3>Umidità media del suolo</h3>
+									<div class="mean-moisture" id="moist_div"></div>
+									<p>Misura la percentuale media di umidità del suolo durante il periodo monitorato, aiutando a valutare la capacità del sistema di irrigazione di mantenere livelli ottimali di umidità.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-comment"></span>
+									<h3>Volume totale di acqua utilizzato</h3>
+									<div class="total-water" id="total_water_div"></div>
+									<p>Traccia la quantità totale di acqua (in litri) applicata al campo, fornendo informazioni sul consumo complessivo di acqua del sistema e sulla sua efficienza.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-flask"></span>
+									<h3>Tempo medio di apertura delle valvole</h3>
+									<div class="mean-valve-time" id="mean_valve_time_div"></div>
+									<p>Calcola la durata media in cui la valvola rimane aperta, indicando la lunghezza tipica delle sessioni di irrigazione e il flusso d'acqua.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-paper-plane"></span>
+									<h3>Frequenza di apertura delle valvole</h3>
+									<div class="valve-frequency" id="valve_frequency_div"></div>
+									<p>Conta quante volte la valvola viene aperta durante il periodo monitorato, fornendo un'indicazione della frequenza di irrigazione.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-file"></span>
+									<h3>Efficienza dell'utilizzo d'acqua</h3>
+									<div class="water_efficiency_with_symbol" id="water_efficiency_div"></div>
+									<p>Confronta il volume totale di acqua utilizzata con l'umidità media del terreno, valutando quanto efficacemente l'acqua viene utilizzata per mantenere i livelli di umidità desiderati.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major fa-lock"></span>
+									<h3>Variazione dell'umidità del suolo</h3>
+									<div class="moisture-variation" id="moisture_variation_div"></div>
+									<p>Analizza le fluttuazioni dell'umidità del suolo nel tempo, aiutando a comprendere quanto efficacemente il sistema si adatti ai cambiamenti delle condizioni del suolo.</p>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+            <!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/matteo.musella" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/in/matteomusella/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.instagram.com/im.mvsh/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/MatteoMusella28" class="icon brands alt fa-github"><span class="label">GitHub</span> </a></li>
+						<li><a href="mailto:matteo.musella.28@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="https://github.com/MatteoMusella28">Matteo Musella</a></li>
+					</ul>
+				</footer>
+        </div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript">
+			$.get("http://localhost/sensors/s1",function(datav, status){
+				//console.log(datav)
+				datav = JSON.parse(datav)
+				console.log(datav)
+				data_first_graph = datav.map(innerList => [innerList[0], innerList[1]])
+				data_second_graph = datav.map(innerList => [innerList[0], innerList[2]])
+				console.log(data_first_graph)
+				google.charts.load('current', {packages: ['corechart', 'line']});
+				google.charts.setOnLoadCallback(drawBasic);
+				google.charts.setOnLoadCallback(drawKPIs);
+				function drawBasic() {
+
+					  var data1 = new google.visualization.DataTable();
+					  data1.addColumn('string', 'Time');
+					  data1.addColumn('number', 'Moisture');
+					  data1.addRows(data_first_graph);
+					  var options1 = {
+						hAxis: {
+						  title: 'Time'
+						},
+						vAxis: {
+						  title: 'Moisture'
+						}
+					  };
+					  var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+					  chart.draw(data1, options1);
+					  
+					  var data2 = new google.visualization.DataTable();
+					  data2.addColumn('string', 'Time');
+					  data2.addColumn('number', 'Valve');
+					  data2.addRows(data_second_graph);
+					  var options1 = {
+						hAxis: {
+						  title: 'Time'
+						},
+						vAxis: {
+						  title: 'Valve'
+						}
+					  };
+					  var chart = new google.visualization.LineChart(document.getElementById('chart_div_valve'));
+					  chart.draw(data2, options1);
+				   }
+			})
+
+			function drawKPIs() {
+				$.get("http://localhost/sensors/s1/meansoil", function(data) {
+					$("#moist_div").text(JSON.parse(data)[0]);
+				});
+				$.get("http://localhost/sensors/s1/totalwater", function(data) {
+					$("#total_water_div").text(JSON.parse(data)[0]);
+				});
+				$.get("http://localhost/sensors/s1/meantimevalve", function(data) {
+					$("#mean_valve_time_div").text(JSON.parse(data)[0]);
+				});
+				$.get("http://localhost/sensors/s1/valvefrequency", function(data) {
+					$("#valve_frequency_div").text(JSON.parse(data)[0]);
+				});
+				$.get("http://localhost/sensors/s1/waterefficiency", function(data) {
+					$("#water_efficiency_div").text(JSON.parse(data)[0]);
+				});
+				$.get("http://localhost/sensors/s1/moisturevariation", function(data) {
+					$("#moisture_variation_div").text(JSON.parse(data)[0]);
+				});
+			}
+		</script>
+    </body>
+</html>
